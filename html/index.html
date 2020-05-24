@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="intro">
+            <div class="intro-inner">
+                <div class="intro-left">
+                    <div class="container">
+                        <div class="intro-left-header">
+                            <div class="header">
+                            MSI 2020
+                            </div>
+                            <div class="menu" id="menu">
+                                <div class="icon-background"><a id="js-icon" href="#" class="icon">&#9776;</a></div>
+                                <h4>Favourite</h4>
+                            </div>
+                            <div id="myModal" class="modal">
+                                <div class="modal-wrapper">
+                                    <div class="intro-modal" id="intro-modal">
+                                        <div class="intro-inner-modal" id="js-intro-inner-modal">
+                                            <div class="menu" id="menu">
+                                                <div class="icon-background"><a href="#" class="close">&times;</a></div>
+                                                <h4>Favourite</h4>
+                                            </div>
+                                            
+                                            <div class="favourite">
+                                                <div class="favourite-inner">
+                                                    <div class="favourite-item">
+                                                        <a class="favourite-like"><img class="like" src="/img/Vector.svg" alt=""></a>
+                                                        <div class="favourite-text">
+                                                            <div class="favourite-message-background"><img class="favourite-message" src="/img/message.svg" alt=""></div>
+                                                            <div class="favourite-explain"> 
+                                                                Chuck Norris doesn't bench press weight sets, he bench presses FREIGHT TRAINS!
+                                                            </div>
+                                                        </div>
+                                                        <div class="favourite-update">Last update: 1923 hours ago</div>
+                                                    </div>
+                                                   
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                
+                        <h1>Hey!</h1>
+                        <h3>Let’s try to find a joke for you:</h3>
+                        <form>
+                            <div class="radio" >
+                                <input onclick="updateDisplayRandom({verse})" class="custom-radio" type="radio" id="verse" name="random">
+                                <label for="verse">Random</label>
+                                <div id="js-random-id">
+
+                                </div>
+                            </div>
+                            <div class="radio">
+                                <input onclick="updateDisplayCategories({verse})" class="custom-radio categories" type="radio" id="categories" name="categories">
+                                <label onclick="myFunction()" for="categories">From categories</label>
+                              </div>
+                            <div class="categories-items" id="js-categories-items">
+                                <!--<button onclick="updateDisplayCategory({verse})" id="categories-item" class="categories-item">Animal</button>
+                                <button onclick="updateDisplayCategory({verse})" id="categories-item" class="categories-item">Career</button>
+                                <button onclick="updateDisplayCategory({verse})" id="categories-item" class="categories-item">Celebrity</button>
+                                <button onclick="updateDisplayCategory({verse})" id="categories-item" class="categories-item">Dev</button>-->
+                            </div>
+                            
+                            <div class="radio">
+                                <input class="custom-radio" type="radio" id="search" name="search">
+                                <label onclick="myFunctionSearch()" for="search">Search</label>
+                            </div>
+                                <input id="js-categories-items-search" class="search-text" type="search" placeholder="Free text search...">
+                            
+                            <input onclick="updateDisplaySearch(verse)" type="submit" value="Get a joke" class="button"/>
+                        </form>
+                        <div class="example">
+                            <div class="example-inner" id="example-inner">
+                                <div class="example-item" id="example-item">
+                                    <div class="id" id="id">ID:<a class="id-text"></a></div>
+                                    <a class="example-like" data-id="like"><img class="like" onclick="imgHeart(this)" src="/img/Vector.svg"  alt=""></a>
+                                    <div class="example-text" id="example-text">
+                                        
+                                        <div class="message-background"><img class="message" src="/img/message.svg" alt=""></div>
+                                        
+                                        <div class="example-explain"> 
+                                            <!--No one truly knows who's Chuck Norris' real father. No one is biologically strong enough for this. He must've conceived himself.-->
+                                        </div>
+                                    </div>
+                                    <div class="origin" id="origin">
+                                    </div>
+                                </div>
+                                
+                        
+                                <!--<div class="example-item">
+                                    
+                                    <a class="example-like" data-id="like"><img class="like" src="/img/Vector.svg" alt=""></a>
+                                    <div class="example-text">
+                                        <div class="message-background"><img class="message" src="/img/message.svg" alt=""></div>
+                                        <div class="example-explain"> 
+                                            No one truly knows who's Chuck Norris' real father. No one is biologically strong enough for this. He must've conceived himself.
+                                        </div>
+                                    </div>
+                                    <div class="origin">
+                                        <div class="example-update">Last update: 1923 hours ago</div>
+                                        <div class="category">celebrity</div>
+                                    </div>
+                                
+                                </div>-->
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>    
+                    <div class="intro-right" id="intro-right">
+                        <div class="intro-right-inner" id="js-intro-right-inner">
+                            <h4>Favourite</h4>
+                            <div class="favourite" id="favourite">
+                                <div class="favourite-inner">
+                                    <div class="favourite-item" id="favourite-item">
+                                        <a class="favourite-like"><img class="like" onclick="imgHeart(this)" src="/img/Vector.svg" alt=""></a>
+                                        <div class="favourite-text">
+                                            <div class="favourite-message-background"><img class="favourite-message" src="/img/message.svg" alt=""></div>
+                                            <div class="favourite-explain"> 
+                                                Chuck Norris doesn't bench press weight sets, he bench presses FREIGHT TRAINS!
+                                            </div>
+                                        </div>
+                                        <div class="favourite-update">Last update: 1923 hours ago</div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>   
+    </div>    
+    
+    <script src="https://api.chucknorris.io/jokes/random"></script>
+    <script src="https://api.chucknorris.io/jokes/categories"></script>
+    <script src="https://api.chucknorris.io/jokes/random?category={category}"></script>
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
