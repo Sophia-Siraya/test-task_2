@@ -7,7 +7,7 @@ function myFunction() {
          x.style.display = 'inline-flex';
      }
  }
-
+// new comment
  function myFunctionSearch() {
      var x = document.getElementById('js-categories-items-search');
      if (x.style.display === 'inline-flex') {
